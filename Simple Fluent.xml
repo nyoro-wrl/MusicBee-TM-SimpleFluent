@@ -41,6 +41,7 @@
 	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#L">&#xED1E;</element>
 	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="551" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="openNowPlayingAssistant">&#xE721;</element>
 
+	<!-- Visualiser -->
 	<element type="SpectrumVisualiser" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.91.6" heightDock="y:Panel.100" fg="51,255,255,255"/>
 
 	<!-- Hide Visualiser -->
