@@ -63,7 +63,7 @@
 	<autoHide name="#L" allowPinning="true">
 		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
 		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
-		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<element type="Lyrics" align="Top.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="-347" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
 		<!-- Replace Controls -->
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HL">&#xE870;</element>
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#SL">&#xF61F;</element>
@@ -90,7 +90,7 @@
 		<!-- Lyrics -->
 		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
 		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
-		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<element type="Lyrics" align="Top.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="-347" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
 		<!-- Replace Controls -->
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HSL">&#xE870;</element>
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#L">&#xF61F;</element>
@@ -104,7 +104,7 @@
 		<!-- Lyrics -->
 		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
 		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
-		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<element type="Lyrics" align="Top.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="-347" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
 		<!-- Replace Controls -->
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#L">&#xE870;</element>
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HSL">&#xF61F;</element>
@@ -121,7 +121,7 @@
 		<!-- Lyrics -->
 		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
 		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
-		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<element type="Lyrics" align="Top.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="-347" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
 		<!-- Replace Controls -->
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#SL">&#xE870;</element>
 		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HL">&#xF61F;</element>
