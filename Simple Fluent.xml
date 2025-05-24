@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<settings enableScaling="true"/>
+
+	<!-- Hide -->
+	<element type="PlayerBar" width="0" height="0"/>
+
+	<!-- Background Cover -->
+	<element type="BackgroundAlbumCover" brightness="0.15" refreshInterval="EndOfTrack"/>
+
+	<!-- Album Cover -->
+	<element name="#CoverPanel" type="Block" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.0" heightDock="y:Panel.91" x="30" width="-27" y="33" height="-180"/>
+	<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750"/>
+
+	<!-- Track Info -->	
+	<element type="Field" id="Title" align="center" xAnchor="Panel.15" widthDock="x:Panel.85" yAnchor="Panel.91" x="3" y="-146" font="Segoe UI" size="14" fg="240,240,240"/>
+	<element type="Field" id="Album" align="center" xAnchor="Panel.15" widthDock="x:Panel.85" yAnchor="Panel.91" x="3" y="-116" font="Segoe UI" size="14" fg="230,230,230"/>
+	<element type="Field" id="Artist" align="center" xAnchor="Panel.15" widthDock="x:Panel.85" yAnchor="Panel.91" x="3" y="-86" font="Segoe UI" size="14" fg="220,220,220"/>
+
+	<!-- Progress Bar -->
+	<element type="ProgressBar" xAnchor="Panel.10" widthDock="x:Panel.90" yAnchor="Panel.91" y="-17" height="5" fg="196,255,255,255" bg="38,255,255,255">
+		<element type="ProgressButton" width="20" height="20" fg="255,255,255"/>
+	</element>
+
+	<!-- Time -->
+	<element type="PlayPosition" align="right" xAnchor="Panel.0" widthDock="x:Panel.10" yAnchor="Panel.91" width="-9" y="-28" font="Segoe UI" size="14" fg="220,220,220"/>
+	<element type="PlayDuration" align="left" xAnchor="Panel.90" widthDock="x:Panel.100" yAnchor="Panel.91" x="10" y="-28" font="Segoe UI" size="14" fg="220,220,220"/>
+
+	<!-- Controls -->
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#H">&#xE870;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#S">&#xF61F;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-278" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="repeatToggle" visibleTrigger="repeatOff">&#xF5E7;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-278" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="repeatToggle" visibleTrigger="repeatOn">&#xE8EE;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-138" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="playPrevious">&#xF8AC;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="2" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="playPause" visibleTrigger="playing">&#xF8AE;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="2" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="playPause" visibleTrigger="notPlaying">&#xF5B0;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="142" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="playNext">&#xF8AD;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="282" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="shuffleToggle" visibleTrigger="shuffleOff">&#xE76F;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="282" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="shuffleToggle" visibleTrigger="shuffleOn">&#xE8B1;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#L">&#xED1E;</element>
+	<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="551" font="Segoe Fluent Icons" size="20" fg="240,240,240" mouseOverFg="191,191,191" onClick="openNowPlayingAssistant">&#xE721;</element>
+
+	<element type="SpectrumVisualiser" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.91.6" heightDock="y:Panel.100" fg="51,255,255,255"/>
+
+	<!-- Hide Visualiser -->
+	<autoHide name="#H" allowPinning="true">
+		<element type="SpectrumVisualiser"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HS">&#xF61F;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HL">&#xED1E;</element>
+	</autoHide>
+
+	<!-- Soundgraph -->
+	<autoHide name="#S" allowPinning="true">
+		<element type="Soundgraph" xAnchor="Panel.10" widthDock="x:Panel.90" yAnchor="Panel.91" y="-30" height="30" fg="200,255,255,255" bg="12,255,255,255"/>
+		<element type="ProgressBar" y="-20"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HS">&#xE870;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#SL">&#xED1E;</element>
+	</autoHide>
+
+	<!-- Lyrics -->
+	<autoHide name="#L" allowPinning="true">
+		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
+		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
+		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HL">&#xE870;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#SL">&#xF61F;</element>
+	</autoHide>
+
+	<!-- Hide Visualiser & Soundgraph -->
+	<autoHide name="#HS" allowPinning="true">
+		<!-- Hide Visualiser -->
+		<element type="SpectrumVisualiser"/>
+		<!-- Soundgraph -->
+		<element type="Soundgraph" xAnchor="Panel.10" widthDock="x:Panel.90" yAnchor="Panel.91" y="-30" height="30" fg="200,255,255,255" bg="12,255,255,255"/>
+		<element type="ProgressBar" y="-20"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#S">&#xE870;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#H">&#xF61F;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HSL">&#xED1E;</element>
+	</autoHide>
+
+	<!-- Soundgraph & Lyrics -->
+	<autoHide name="#SL" allowPinning="true">
+		<!-- Soundgraph -->
+		<element type="Soundgraph" xAnchor="Panel.10" widthDock="x:Panel.90" yAnchor="Panel.91" y="-30" height="30" fg="200,255,255,255" bg="12,255,255,255"/>
+		<element type="ProgressBar" y="-20"/>
+		<!-- Lyrics -->
+		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
+		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
+		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HSL">&#xE870;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#L">&#xF61F;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#S">&#xED1E;</element>
+	</autoHide>
+
+	<!-- Hide Visualiser & Lyrics -->
+	<autoHide name="#HL" allowPinning="true">
+		<!-- Hide Visualiser -->
+		<element type="SpectrumVisualiser"/>
+		<!-- Lyrics -->
+		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
+		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
+		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#L">&#xE870;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HSL">&#xF61F;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#H">&#xED1E;</element>
+	</autoHide>
+
+	<!-- Hide Visualiser & Soundgraph & Lyrics -->
+	<autoHide name="#HSL" allowPinning="true">
+		<!-- Hide Visualiser -->
+		<element type="SpectrumVisualiser"/>
+		<!-- Soundgraph -->
+		<element type="Soundgraph" xAnchor="Panel.10" widthDock="x:Panel.90" yAnchor="Panel.91" y="-30" height="30" fg="200,255,255,255" bg="12,255,255,255"/>
+		<element type="ProgressBar" y="-20"/>
+		<!-- Lyrics -->
+		<element type="Block" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="749" height="749" x="1" y="1" bg="192,0,0,0"/>
+		<element type="AlbumCover" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="750" height="750" brightness="0.04"/>
+		<element type="Lyrics" align="Middle.Center" xAnchor="#CoverPanel.Center" yAnchor="#CoverPanel.Center" width="698" height="697" x="1" y="1" font="Segoe UI" size="14" fg="255,255,255" fg2="255,155,80"/>
+		<!-- Replace Controls -->
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-548" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#SL">&#xE870;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="-413" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HL">&#xF61F;</element>
+		<element type="Text" align="center" xAnchor="Panel.0" widthDock="x:Panel.100" yAnchor="Panel.94" x="417" font="Segoe Fluent Icons" size="20" fg="210,210,210" mouseOverFg="191,191,191" onClick="openAutoHidePanel:#HS">&#xED1E;</element>
+	</autoHide>
+
+	<!-- Close Button -->
+	<element type="Text" xAnchor="Panel.Right" x="-25" y="5" width="25" font="Webdings" style="Regular" size="10" mouseOverFg="255,0,0" onClick="CloseWindow">r</element>
+</root>
